@@ -1,5 +1,6 @@
 'use strict';
 
+// tag::vars[]
 const React = require('react');
 const ReactDOM = require('react-dom');
 const client = require('./client');
@@ -35,14 +36,14 @@ class ProductList extends React.Component{
 		);
 		return (
 			<table>
-                  <tbody>
+				<tbody>
 					<tr>
-						<th>title</th>
-						<th>price</th>
-						<th>description</th>
+						<th>Title</th>
+						<th>Price</th>
+						<th>Description</th>
 					</tr>
 					{products}
-                  </tbody>
+				</tbody>
 			</table>
 		)
 	}
@@ -68,3 +69,5 @@ ReactDOM.render(
 	<App />,
 	document.getElementById('react')
 )
+// end::render[]
+
